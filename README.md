@@ -20,26 +20,26 @@
 
 ## Running Files
 
-**Train Churn Model**
+**Train Model**
 
 - STEP 1 - Import DataSet
-
+<pre>
 import churn_library
-
 df = churn_library.import_data("./data/bank_data.csv")
- 
+ </pre>
 - STEP 2 - Perform EDA
-
+<pre>
 churn_library.perform_eda(df)
-
+ </pre>
 - STEP 3- Feature Engineering
-
+<pre>
 x_train, x_test, y_train, y_test = churn_library.perform_feature_engineering(df, 'Churn')
-
+ </pre>
 - STEP 4 - Train Model
-
+<pre>
 churn_library.train_models(x_train, x_test, y_train, y_test)
-
-** Run Test **
-
+ </pre>
+**Run Test**
+<pre>
 pytest churn_script_logging_and_tests.py
+ </pre>
