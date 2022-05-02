@@ -7,7 +7,7 @@
 - Supervised Machine Learning Model to Identify the potential Customers to Churn
 
 ## Files and data description
-.
+<pre>
 ├── data                                    # Training Data 
 ├── images                                  # EDA and Trained Model Results
 ├── logs                                    # Pytest Logs
@@ -16,6 +16,7 @@
 ├── churn_script_logging_and_tests.py       # Unit tests for the churn_library.py functions.
 ├── LICENSE
 └── README.md 
+</pre>
 
 ## Running Files
 
@@ -24,6 +25,7 @@
 - STEP 1 - Import DataSet
 
 import churn_library
+
 df = churn_library.import_data("./data/bank_data.csv")
  
 - STEP 2 - Perform EDA
